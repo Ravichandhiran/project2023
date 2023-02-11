@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8733f5840c.js" crossorigin="anonymous"></script>
+    <title>Simple page template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+     <nav>
+         <div class="loko">folio<b>.</b></div>
+            <ul class="navItems">
+               <li><a href="#">Home</a></li> 
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+         
+      
+        <div class="links">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+         </div>
+      </nav>  
+        <div class="right">
+           <div class="cols0">
+               <p class="topline"><span>H</span>ello</p>
+               <h1>I'm   <span class="multitext">Coder </span></h1>
+               <p>  *The program is first advertising to the amazing to the  people organisation of solution.</p>
+                <button class="left">Download CV</button>
+                <button class="click">Hire me</button>
+            </div>
+            <div class="pic">
+            <img src="gojo.jpg"> 
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+                const text = document.querySelector(".multitext");
+
+               const textLoad = () => {
+
+                setTimeout(() =>{
+            text.textContent ="coder";
+               } , 0);
+               setTimeout(() =>{
+            text.textContent ="freelancer";
+               } , 2000);
+                 setTimeout(() => {
+              text.textContent = "Blogger";
+             }, 4000);
+
+               setTimeout(() => {
+             text.textContent = "Youtuber";
+            }, 8000);
+            }
+             textLoad();
+           setInterval(textLoad, 12000)  
+        </script>
+       
+     
+   </div>
+ 
+</body>
+</html>

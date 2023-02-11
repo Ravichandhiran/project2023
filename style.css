@@ -1,0 +1,182 @@
+
+.container{
+        position: relative;
+       color: darkcyan;
+       width: 100%;
+     
+     
+}
+nav{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+   height: 80px;
+   z-index: 111;
+
+}
+
+.loko{
+    display: flex;
+    font-size: 40px;
+    font-weight:600;
+    color: darkblue;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+ 
+    
+    
+}
+.navItems{
+    display: flex;
+    color: aliceblue;
+     align-items: center;
+    
+}
+.navItems li a{
+    padding: 20px;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+
+}
+b{
+    font-weight: 700;
+    color: blueviolet;
+}
+.navItems li a:hover,
+.links a:hover{
+    color: chartreuse;
+}
+.right button:hover,
+.right click:hover{
+    color: black;
+}
+
+.links{
+   padding-top: 10px;
+   display: flex;
+   color: black;
+}
+.links a{
+    align-items: center;
+    padding: 8px;
+
+}
+.right{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+}
+
+.cols0{
+    width: 50%;
+}
+.topline{
+    display:block;
+    position:relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color:greenyellow;
+    padding-left: 70px;
+    font-weight: 500;
+}
+
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 60px;
+}
+.topline span{
+    color:purple;
+}
+h1{
+    display: flex;
+    font-size: 70px;
+    font-weight: 600;
+    color: red;
+    padding-left:70px; 
+   
+
+}
+
+.multitext{
+    color: purple;
+    word-spacing: 20px;
+}
+p{
+    padding-left:70px; 
+    font-size: 20px;
+    word-spacing: 8px;
+    color: white;
+    
+}
+
+
+ .right .left{
+    margin-right:90px;
+    color:wheat;
+    border: 1 solid black;
+    font-size: 30px;
+    margin: 20px;
+    background-color:#20b2aa;
+    margin-top: 30px;
+  }
+  .right .click{
+    margin-right:90px;
+    color:wheat;
+    border: 1 solid black;
+    font-size: 30px;
+    margin: 20px;
+    word-spacing: center;
+    background-color:#20b2aa;
+    margin-top: 30px;
+
+
+  }
+  .pic{
+    position: relative;
+    max-width: 300px;
+}
+.pic img{
+    position:relative;
+    padding-bottom: 50px;
+    max-width: 250px;
+    width: calc(130% -70px);
+    top: -80px;
+    right: 50px;
+    transform: rotateY(180 deg);
+    animation: animateUser 4s linear infinite;
+}
+@keyframes animateUser{
+    50%{
+        right: 30px ;
+        top: -80px;
+
+    }
+}
+.text.multitext:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-left: 2px solid blue;
+    animation: animate 4s steps(12) infinite;
+
+}
+@keyframes animate{
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+ 
